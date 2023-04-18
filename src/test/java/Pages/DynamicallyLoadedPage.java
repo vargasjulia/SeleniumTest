@@ -14,7 +14,7 @@ public class DynamicallyLoadedPage extends CommonMethods {
     public WebElement helloMessage;
 
     public DynamicallyLoadedPage(){
-        PageFactory.initElements( driver,this);
+        PageFactory.initElements(driver, this);
     }
 
 }

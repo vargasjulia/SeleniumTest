@@ -18,6 +18,6 @@ public class FileUploadPage extends CommonMethods {
     public WebElement CheckMark;
 
     public FileUploadPage(){
-        PageFactory.initElements( driver,this);
+        PageFactory.initElements(driver, this);
     }
 }

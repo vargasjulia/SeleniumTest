@@ -13,6 +13,6 @@ public class NotificationPage extends CommonMethods {
     public WebElement message;
 
     public NotificationPage(){
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 }

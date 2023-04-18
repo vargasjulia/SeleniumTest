@@ -21,7 +21,7 @@ public WebElement CheckBoxText;
     public WebElement EnableMessage;
 
 public DynamicControlsPage(){
-    PageFactory.initElements( driver,this);
+    PageFactory.initElements(driver, this);
 }
 
 

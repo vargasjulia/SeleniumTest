@@ -15,6 +15,6 @@ public class DragAndDropPage extends CommonMethods {
     public WebElement BoxB;
 
     public DragAndDropPage(){
-        PageFactory.initElements( driver,this);
+        PageFactory.initElements(driver, this);
     }
 }

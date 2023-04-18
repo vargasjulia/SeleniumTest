@@ -12,7 +12,7 @@ public class DropDownPage extends CommonMethods {
     public WebElement dropdownList;
 
     public DropDownPage(){
-        PageFactory.initElements( driver,this);
+        PageFactory.initElements(driver, this);
     }
 
 }

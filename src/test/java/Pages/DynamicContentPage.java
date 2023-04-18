@@ -17,7 +17,7 @@ public class DynamicContentPage extends CommonMethods {
     public WebElement Text3;
 
     public DynamicContentPage(){
-        PageFactory.initElements( driver,this);
+        PageFactory.initElements(driver, this);
     }
 
 }

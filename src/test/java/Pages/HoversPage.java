@@ -27,6 +27,6 @@ public class HoversPage extends CommonMethods {
     public WebElement user3Text;
 
     public HoversPage(){
-        PageFactory.initElements( driver, this);
+        PageFactory.initElements(driver, this);
     }
 }

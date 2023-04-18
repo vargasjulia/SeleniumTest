@@ -11,6 +11,6 @@ public class ContexMenuPage extends CommonMethods {
     public WebElement Box;
 
     public ContexMenuPage(){
-        PageFactory.initElements( driver,this);
+        PageFactory.initElements(driver, this);
     }
 }

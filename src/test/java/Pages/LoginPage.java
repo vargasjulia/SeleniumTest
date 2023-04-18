@@ -28,6 +28,6 @@ public class LoginPage extends CommonMethods {
     public WebElement errorMessage;
 
 public LoginPage(){
-    PageFactory.initElements( driver,this);
+    PageFactory.initElements(driver, this);
 }
 }

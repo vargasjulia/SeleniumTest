@@ -14,6 +14,6 @@ public class IframePage extends CommonMethods {
     public WebElement frame;
 
     public IframePage(){
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 }

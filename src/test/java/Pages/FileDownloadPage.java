@@ -12,6 +12,6 @@ public class FileDownloadPage extends CommonMethods {
     public WebElement file;
 
     public FileDownloadPage(){
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 }

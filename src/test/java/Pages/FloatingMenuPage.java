@@ -11,6 +11,6 @@ public class FloatingMenuPage extends CommonMethods {
     public WebElement menu;
 
     public FloatingMenuPage(){
-        PageFactory.initElements( driver,this);
+        PageFactory.initElements(driver, this);
     }
 }

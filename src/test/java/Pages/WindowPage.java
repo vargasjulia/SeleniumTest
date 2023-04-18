@@ -14,6 +14,6 @@ public class WindowPage extends CommonMethods {
     public WebElement NewMessage;
 
     public WindowPage(){
-        PageFactory.initElements( driver, this);
+        PageFactory.initElements(driver, this);
     }
 }

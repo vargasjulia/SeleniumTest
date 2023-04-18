@@ -2,27 +2,35 @@ package test;
 
 import Pages.CheckBoxPage;
 import Pages.ContexMenuPage;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.omg.Messaging.SyncScopeHelper;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import utils.CommonMethods;
 
-import java.net.MalformedURLException;
-import java.net.URL;
+
 
 public class ContexMenuPageTest {
 
-    protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
-    public static void main(String[] args) throws MalformedURLException, InterruptedException {
+    public static WebDriver driver;
+    @BeforeMethod
+    public void preCondition(){
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.get("http://localhost:7080/context_menu");
+        driver.manage().window().maximize();
 
-        String remote_url_chrome = "http://localhost:7080";
-        ChromeOptions options = new ChromeOptions();
-        driver.set(new RemoteWebDriver(new URL(remote_url_chrome), options));
-        driver.get().navigate().to("https://localhost:7080/context_menu ");
+    }
 
+    @Test
+    public void hoversTest(){
         ContexMenuPage contexMenuPage = new ContexMenuPage();
         Actions act=new Actions((WebDriver) driver);
         contexMenuPage.Box.isDisplayed();
@@ -32,6 +40,8 @@ public class ContexMenuPageTest {
         System.out.println("Alert text is "+ alertText);
         simpleAlert.accept();
 
-        CommonMethods.tearDown();
     }
+
+    @AfterMethod
+    public void post(){CommonMethods.tearDown();}
 }

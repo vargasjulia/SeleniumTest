@@ -15,7 +15,7 @@ public class CheckBoxPage extends CommonMethods {
     public WebElement checkBox2;
 
     public CheckBoxPage(){
-        PageFactory.initElements( driver,this);
+        PageFactory.initElements(driver, this);
     }
 
 }

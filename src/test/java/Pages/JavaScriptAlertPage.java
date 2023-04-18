@@ -21,6 +21,6 @@ public class JavaScriptAlertPage extends CommonMethods {
     public WebElement jsPromptButton;
 
     public JavaScriptAlertPage(){
-        PageFactory.initElements( driver, this);
+        PageFactory.initElements(driver, this);
     }
 }
