@@ -16,8 +16,8 @@ import utils.CommonMethods;
 import java.io.File;
 
 
-public class FileDownloadPageTest {
-    public static WebDriver driver;
+public class FileDownloadPageTest extends CommonMethods{
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

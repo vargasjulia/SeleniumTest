@@ -14,8 +14,8 @@ import utils.CommonMethods;
 
 
 
-public class IframePageTest {
-    public static WebDriver driver;
+public class IframePageTest extends CommonMethods{
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

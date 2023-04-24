@@ -17,9 +17,9 @@ import utils.CommonMethods;
 
 
 
-public class DynamicControlsPageTest {
+public class DynamicControlsPageTest extends CommonMethods{
 
-    public static WebDriver driver;
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

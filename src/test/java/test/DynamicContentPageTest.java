@@ -14,8 +14,8 @@ import utils.CommonMethods;
 
 
 
-public class DynamicContentPageTest {
-    public static WebDriver driver;
+public class DynamicContentPageTest extends CommonMethods{
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

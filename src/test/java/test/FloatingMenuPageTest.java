@@ -15,10 +15,10 @@ import utils.CommonMethods;
 
 
 
-public class FloatingMenuPageTest  {
+public class FloatingMenuPageTest extends CommonMethods {
 
 
-    public static WebDriver driver;
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

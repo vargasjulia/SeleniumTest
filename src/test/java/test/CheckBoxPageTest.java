@@ -16,8 +16,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-public class CheckBoxPageTest {
-    public static WebDriver driver;
+public class CheckBoxPageTest extends CommonMethods{
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

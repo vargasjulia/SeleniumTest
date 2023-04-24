@@ -14,8 +14,7 @@ import org.testng.annotations.Test;
 import utils.CommonMethods;
 
 
-public class JavaScriptAlertPageTest {
-    public static WebDriver driver;
+public class JavaScriptAlertPageTest extends CommonMethods {
 
     @BeforeMethod
     public void preCondition() {

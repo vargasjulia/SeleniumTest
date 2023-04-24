@@ -15,9 +15,9 @@ import utils.CommonMethods;
 
 
 
-public class LoginPageTest {
+public class LoginPageTest extends CommonMethods {
 
-    public static WebDriver driver;
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

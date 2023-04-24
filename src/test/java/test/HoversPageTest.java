@@ -16,8 +16,8 @@ import utils.CommonMethods;
 
 
 
-public class HoversPageTest {
-    public static WebDriver driver;
+public class HoversPageTest extends CommonMethods{
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

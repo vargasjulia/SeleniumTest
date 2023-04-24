@@ -14,8 +14,8 @@ import utils.CommonMethods;
 
 
 
-public class FileUploadPageTest {
-    public static WebDriver driver;
+public class FileUploadPageTest extends CommonMethods{
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

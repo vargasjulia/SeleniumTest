@@ -3,22 +3,18 @@ package test;
 import Pages.WindowPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.CommonMethods;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.Callable;
 
-public class WindowPageTest {
-    public static WebDriver driver;
+public class WindowPageTest extends CommonMethods {
+
 
     @BeforeMethod
     public void preCondition(){

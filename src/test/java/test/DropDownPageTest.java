@@ -15,8 +15,8 @@ import utils.CommonMethods;
 
 
 
-public class DropDownPageTest {
-    public static WebDriver driver;
+public class DropDownPageTest extends CommonMethods{
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

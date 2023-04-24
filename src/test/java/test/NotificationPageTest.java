@@ -10,9 +10,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.CommonMethods;
 
-public class NotificationPageTest {
+public class NotificationPageTest extends CommonMethods {
 
-    public static WebDriver driver;
+
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

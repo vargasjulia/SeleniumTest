@@ -20,8 +20,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.logging.Level;
 
-public class JavaScriptErrorPageTest {
-    public static WebDriver driver;
+public class JavaScriptErrorPageTest extends CommonMethods {
+
 
     @BeforeMethod
     public void preCondition() {
